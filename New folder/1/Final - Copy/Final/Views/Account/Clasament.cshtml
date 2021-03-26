@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Final.Models.Team>
+     
+@{
+     int i = 1;
+}
+
+<table class="table table-sm">
+     <thead>
+          <tr>
+               <th scope="col"></th>
+               <th scope="col"></th>
+               <th scope="col"></th>
+               <th scope="col">Pl</th>
+               <th scope="col">W</th>
+               <th scope="col">D</th>
+               <th scope="col">L</th>
+               <th scope="col">Golaverage</th>
+               <th scope="col">Pts</th>
+          </tr>
+     </thead>
+     <tbody>
+          @foreach (var item in Model)
+          {
+               <tr class="active">
+                    <td class="@((i < 4) ? "table-success" : (i==4) ? "table-primary" : (i==5) ? "table-warning" : (i > 17) ? "table-danger" : "table-secondary")">@i</td>
+                    <td>
+                         <img src="~/Content/imgTeams/@item.Image.Path" style="width:30px; height:30px;" />
+                    </td>
+                    <td class="alig"><a href="/Home/Team/@item.Id">@item.Name</a></td>
+                    <td>@item.Matches</td>
+                    <td>@item.Wins</td>
+                    <td>@item.Draws</td>
+                    <td>@item.Loses</td>
+                    <td>(@item.Goals_scored/@item.Goals_received)(@item.Golaverage(item.Goals_scored, item.Goals_received))</td>
+                    <th>@item.Points</th>
+
+               </tr>
+
+               <span style="display:none">@(i = i + 1);</span>
+          }
+
+     </tbody>
+</table>

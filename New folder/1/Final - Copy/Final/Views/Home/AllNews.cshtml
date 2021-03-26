@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Final.Models.New>
+
+@{
+    ViewBag.Title = "AllNews";
+}
+
+<h2>AllNews</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreateNew")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "/EditNew/", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "/DeleteNew/", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

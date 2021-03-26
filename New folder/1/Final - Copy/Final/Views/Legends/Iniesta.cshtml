@@ -1,0 +1,489 @@
+﻿@{
+     ViewBag.Title = "Andres Iniesta";
+     int i = 0;
+     int j = 0;
+}
+
+<style>
+     .field {
+          width: 50%;
+          float: left;
+     }
+
+     .value {
+          width: 50%;
+          float: right;
+     }
+
+     .jstable {
+          width: 90%;
+          height: 100%;
+          border: solid 1px gray;
+          background: #F5F5F5;
+          border-radius: 13px;
+          padding: 20px;
+          margin: 0 auto;
+          margin-bottom: 15px;
+     }
+
+     .table {
+          margin: 0 auto;
+          width: 90%;
+     }
+
+     .matches {
+          width: 10%;
+     }
+</style>
+
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+     <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Overview</a>
+     </li>
+     <li>
+          <i class="js-player"></i>
+
+     </li>
+     <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Statistics</a>
+     </li>
+     <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Foto</a>
+     </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+
+     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="row" style="padding:30px;">
+               <div class="col-xs-12 rmpadd" style="padding-right:0px; width:100%;">
+                    <div class="jsObjectPhoto rmpadd">
+                         <div class="photoPlayer" style="width:50%; float:left;">
+                              <img alt="" class="img-thumbnail img-responsive" src="https://images.daznservices.com/di/library/GOAL/5a/3a/andres-iniesta-barcelona_1w487sbjo8ux71ppcux8eb9vez.jpg?t=-1170776726&quality=60&w=1200&h=800" width="610" style="width:610px;">
+                         </div>
+
+                    </div>
+                    <div class="well well-sm pt10 extrafldcn" style="float:right; margin-right:50px; margin-top:10px;">
+                         <div class="well well-sm pt10 extrafldcn">
+                              <div class="jstable" style="width:430px; padding:10px; margin-top:-7px; height:366px; padding-top:35px;">
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Name:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Andres
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Surname:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Iniesta
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Nickname:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Illusionist, wizard
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Team:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Barcelona
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Country:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             <img src="https://barcaman.ru/components/com_joomsport/img/flags/es.png" alt="Испания">
+                                             Spain
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Position:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Midfield
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Born:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             11.05.1984
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Height(cm):
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             170 см
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Weight(kg):
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             68 kg
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Contract type:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Contract
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  In the club since:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             01.02.1996
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  In the club until:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             26.05.2018
+                                        </div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-xs-12 rmpadd" style="padding-right:0px;">
+                    <p>&emsp;&emsp;&emsp;<strong>Andres Iniesta Lujan</strong> (sp. <em>Andrés Iniesta Luján</em>; born on May 11, 1984, Fuentealbilla, Albacete, Spain) is a Spanish footballer and midfielder of FC Barcelona. Vice-captain of the Spanish national team. One of the most prominent players in the history of world football. The most decorated Spanish player in history (33 titles).</p>
+                    <p>
+                         &emsp;&emsp;&emsp;A graduate of the Barcelona Football Academy. He made his first team debut on October 29, 2002 in the UEFA Champions League match against Club Brugge (0: 1). In the 2004/05 season he became a regular player in the starting lineup of the Catalans. Since then, together with the club, he has won eight Spanish championship titles, four Champions League, five Spanish Cups, seven Spanish Super Cups, three European Super Cups and three Club World Championships. In the 2008/09 season he was named the footballer of the year in Spain. In 2012, Iniesta was named the best player in Europe according to UEFA. Three times - the best attacking midfielder Examples (2008/2009, 2011/2012, 2013/2014) and twice - the best playmaker in the world (2012, 2013). The second world footballer in 2010 and the third world footballer in 2012. He was five times in the symbolic European team according to UEFA (2009, 2010, 2011, 2012, 2015) and eight times in the symbolic world team according to FIFA (2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016). On October 13, 2014, Iniesta became the owner of the Golden Foot award, awarded to football players for high sporting achievements achieved in the team and personally.
+                    </p>
+                    <p>&emsp;&emsp;&emsp;Iniesta represented Spain on the international stage, starting with the national team under 16 and ending with the country's first team. As part of the youth team, he became the European U16 Champion, the U17 European Champion and the U19 European Champion. He made his debut for the Spanish national team on May 15, 2006 in a friendly match against the Russian national team (0: 0). Two-time European champion (2008, 2012). He was a member of the symbolic teams of these tournaments. Was recognized as the best player in Euro 2012. World champion (2010). The author of the only decisive goal against the Netherlands national team in the final match. </p>
+                    <p>&emsp;&emsp;&emsp;<strong style="font-size: 16px;">"Barcelona"</strong></p>
+                    <p>&emsp;&emsp;&emsp;Twelve-year-old Iniesta was spotted by Barcelona's Spanish scouts at the Albacete club. He soon moved to Catalonia and began his ascent to the Barcelona first team. Iniesta made his first-team debut on 29 October 2002 in a Champions League match against FC Brugge. In the 2003-04 season, Iniesta has already played 11 matches and scored one goal in the Spanish league, mainly replacing the club's main star, Ronaldinho. That season, Barcelona finished second in the league.</p>
+                    <p>&emsp;&emsp;&emsp;In the 2004-05 season, Iniesta secured his place in the first team squad, playing in 37 of 38 league games — more than any other Barcelona player. As an attacking midfielder, he gave a lot of assists, providing goals to the club's main scorers, Samuel Eto'o and Ronaldinho, but scored only twice. Even with the arrival of Deku Iniesta in the summer of 2004, there was a place in the squad, and in the absence of the injured Xavi, Iniesta played the role of the main manager of the team's attacks. At the time, Iniesta was one of the most promising midfielders in Europe. He was called up to the Spanish national team for the 2006 World Cup in Germany . On August 22, 2006, he raised the Joan Gamper Cup trophy over his head as the team captain after a 4-0 victory over Bayern Munich.
+                    <p>&emsp;&emsp;&emsp;The 2006-07 season was a bad one for Barcelona. In the UEFA Super Cup, the Catalans lost to Sevilla — 0:3. In the championship, "Barcelona" took the 2nd place, losing to "Real" on additional indicators. Iniesta played in 36 games (27 from the first minutes), spent 2604 minutes on the field, scored 6 goals and gave 4 assists. In the Champions League, the Catalans reached only the 1/8 final, where they lost to the future finalist-Liverpool. In this tournament, Iniesta played in 8 games (5 in the start), spent 483 minutes on the field and scored 2 goals. In the Spanish Cup, Barca reached the semi-finals, where they lost to Getafe (5: 2 and 0: 4). At the Club World Cup, "Barcelona" in the 1/2 final beat the Mexican club "America" - 4: 0. However, in the final, the Catalans lost to the Brazilian "Internacional" - 0: 1.</p>
+                    <p>&emsp;&emsp;&emsp;The 2007-08 season turned out to be a failure for Barcelona: in the Spanish league, the team finished only 3rd: after Real Madrid, and Villarreal. In the Example, Iniesta played 31 matches on the field (28 in the start), played 2611 minutes, scored 3 goals and assisted his partners 3 times. In the Champions League, Iniesta played 11 matches (9 in the base), spent 814 minutes on the field and scored one goal. In the Spanish Cup, Barcelona also reached the semifinals, where they lost to Valencia (1: 1 and 2: 3). Due to the disastrous season, Frank Rykard left the post of head coach of the team. In his place was appointed a former player of the club-Pep Guardiola.</p>
+                    <p>
+                         &emsp;&emsp;&emsp;In the 2008-09 season, Iniesta was one of the team's key players. In the league, he played 26 games (22 in the base), spent 1925 minutes on the field, scored 4 goals and scored 9 assists. Barcelona finished the championship in 1st place. In the Champions League, the Catalans reached the semifinals. In it, Barcelona met with Chelsea in London. The first match ended with a score of 0:0. In the second, Chelsea, having scored the ball at the beginning of the meeting, was close to the final, however, thanks to Iniesta's goal, scored in the 93rd minute of the match, Barcelona went further. In the final, Barca faced Manchester United. Already in the 10th minute of the match, Samuel Eto'o with Iniesta's pass put the Catalans ahead, and in the second half, Lionel Messi set the final score of the match — 2: 0. Also, Barcelona achieved victory in the Spanish Cup, beating Athletic Bilbao in the final — 4: 1.
+                    </p>
+                    <p>
+                         &emsp;&emsp;&emsp;In the 2009/10 season, Barcelona won the championship again, scoring a then-record 99 points. Iniesta played in 29 games, 20 of them in the first team (1928 minutes), scored one goal and gave 5 assists. In the Champions League, Barca could only reach the semi-finals, where it was stopped by the future winner of the tournament— Inter Milan. Barcelona have won four titles this season:The Spanish Super Cup, the UEFA Super Cup, the Club World Cup and the Spanish Championship.
+                    </p>
+                    <p>&emsp;&emsp;&emsp;The 2010/11 season was a good one for Barcelona and for Iniesta in particular. In the championship, the Catalans won the championship for the third time in a row, and Iniesta appeared on the field 34 times (32 of them in the starting line-up). In total, he spent 2800 minutes on the field, scored 8 goals and gave 2 assists. In the Champions League, Barcelona, as well as two years ago, won the final of the English "Manchester United".»&nbsp;— 3:1. In the final, Iniesta scored an assist for Lionel Messi, played a total of 10 games (all in the starting line-up), played 898 minutes on the field, scored one goal and gave 6 assists (one pass came in the final). In the Spanish Cup, Barcelona reached the final, where they lost in extra time to their main rival, Real Madrid (0: 1). In the tournament, Iniesta played 5 matches (4 of them in the base), spent 419 minutes on the field and gave 3 assists. In January 2011, Iniesta became the second player of the year 2010, losing to Lionel Messi 174 points.</p>
+                    <p>&emsp;&emsp;&emsp;In the course of the 2011-12 season, Iniesta was often injured, because of which he missed many games. In the championship, Barca was second, behind Real Madrid. Iniesta played in the championship 27 matches (21 in the base), spent a total of 1864 minutes on the field, scored 2 goals and scored 9 assists. In the Champions League, the Catalans were stopped by Chelsea, Iniesta played 8 games (all in the start), spent 573 minutes on the field, scored 3 goals and scored one assist. In the Spanish Cup,"Barcelona" achieved victory, Iniesta played in 4 games (3 in the start), spent 209 minutes on the field and gave an effective pass in the final to Lionel Messi.</p>
+                    <p>&emsp;&emsp;&emsp;In the summer of 2012, Barcelona had a new coach—Tito Vilanova. On August 30, 2012, Iniesta was named the best footballer of the Year in Europe by UEFA, ahead of Real Madrid's Portuguese striker Cristiano Ronaldo and teammate Lionel Messi. On November 25, Iniesta provided three assists and scored a goal in the away match of the Spanish league against Levante(4-0). On November 29, Iniesta was nominated for the "Golden Ball". On December 9, he gave two assists to Messi in a game against Betis(2: 1). On January 7, Iniesta entered the symbolic world team at the end of 2012, and also took third place in the dispute for the "Golden Ball", losing to Messi and Cristiano Ronaldo. Iniesta received 10.9% of the vote.</p>
+                    <p>&emsp;&emsp;&emsp;On 23 December 2013, Iniesta extended his contract with Barcelona until 2018.</p>
+
+
+
+                    <p>&emsp;&emsp;&emsp;On April 9, 2014, Iniesta played his 500th game for the "blue-garnet", the anniversary was an away match against "Atletico" in the quarter-finals of the Champions League.</p>
+                    <p>&emsp;&emsp;&emsp;Before the start of the 2015/16 season, he was appointed captain of Barcelona after the departure of Xavi.</p>
+                    On 27 April 2018, Andres Iniesta announced that he would be leaving Barcelona at the end of the 2017/2018 season. Even in the last season in the team, the player remained in the first team.</p>
+                    <p>&nbsp;<strong style="font-size: 16px;">&emsp;&emsp;&emsp;National team</strong></p>
+                    <p>&emsp;&emsp;&emsp;Iniesta's performances for the national team began in 2001, when he helped Spain win the European Under-16 Championship, and the following year took part in the European Under-19 Championship. In 2003, he was part of the Spanish team that reached the final of the U-20 World Cup in the United Arab Emirates, and entered the symbolic team of the tournament. Several times, Iniesta led the Spanish national youth team (under-21) to matches in the role of team captain.</p>
+                    <div class="thumb tright" style="margin: 0.5em 0px 1.3em 1.4em; width: auto; background-color: #ffffff; clear: right; float: right; color: #222222; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+                         <div class="thumbinner" style="border: 1px solid #c8ccd1; padding: 3px; background-color: #f8f9fa; font-size: 13.16px; text-align: center; overflow: hidden; width: 252px;">
+                              <img class="thumbimage" style="border: 1px solid #c8ccd1; vertical-align: middle; background-color: #ffffff;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Andr%C3%A9s_Iniesta_Euro_2012_final.jpg/250px-Andr%C3%A9s_Iniesta_Euro_2012_final.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Andr%C3%A9s_Iniesta_Euro_2012_final.jpg/375px-Andr%C3%A9s_Iniesta_Euro_2012_final.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Andr%C3%A9s_Iniesta_Euro_2012_final.jpg/500px-Andr%C3%A9s_Iniesta_Euro_2012_final.jpg 2x" alt="" width="250" height="176" data-file-width="608" data-file-height="427">
+                              <div class="thumbcaption" style="border: 0px; line-height: 1.4em; padding: 3px; font-size: 12.3704px; text-align: left;">
+                                   <div class="magnify" style="float: right; margin-left: 3px; margin-right: 0px;">&nbsp;</div>
+                                   Andres Iniesta in the final game of Euro 2012 against the Italian national team.
+                              </div>
+                         </div>
+                    </div>
+
+
+
+                    <p>&emsp;&emsp;&emsp;He made his debut for the Spanish national team on 15 May 2006 in a friendly match against the Russian national team, coming on as a substitute at half-time. He scored his first goal for the national team on 7 February 2007 in a friendly match against England.</p>
+                    <p>&emsp;&emsp;&emsp;At the 2006 World Cup, the Spaniards faced Ukraine (4: 0), Tunisia(3:1) and Saudi Arabia(1:0). In the group, Spain took 1st place and advanced to the 1/8 final against the French national team (1:3). In Germany, Iniesta played only one game— the last match of the group stage against Saudi Arabia, spending the entire 90 minutes on the field.</p>
+                    <p>&emsp;&emsp;&emsp;At Euro 2008, Iniesta was already a key player in the team's midfield. He played an important role in the organization of the attacks, got into the symbolic team of the entire tournament, where Spain won its second European championship. Iniesta played 6 games and gave two assists.</p>
+                    <p>&emsp;&emsp;&emsp;The 2009 Confederations Cup was missed due to a hip injury, his place in the bid was taken by Pablo Hernandez.</p>
+                    <p>&emsp;&emsp;&emsp;In the first game of the 2010 World Cup, the Spaniards suffered an unexpected defeat to the Swiss team-0: 1, and Iniesta was replaced in the 77th minute of the match by Pedro. In the next game against Honduras, the Spaniards won the first World Cup with a score of 2: 0, and Iniesta remained in the reserve. In the last match of the group stage (2:1), Iniesta scored his first goal in the championship. On 11 July, Iniesta scored the only goal in the final against the Netherlands in the 116th minute. After scoring the goal, the Spaniard took off his shirt and showed the world a T-shirt with the inscription " Dani Jarque: siempre con nosotros "(which translates from Spanish:"Dani Harque: always with us"). Harke-captain of the Catalan club Espanyol»- died of a heart attack in August 2009 at the age of 26. The Spaniards won their first world title. Iniesta himself said after the match:</p>
+
+                    <blockquote>
+                         <p>&nbsp; &nbsp; &nbsp; I'm just happy, happy from the fact that the team won the championship, and very happy from what I scored a victorious goal. I think our team has earned the World Cup.</p>
+                    </blockquote>
+                    <div class="thumb tright" style="margin: 0.5em 0px 1.3em 1.4em; width: auto; background-color: #ffffff; clear: right; float: right; color: #222222; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+                         <div class="thumbinner" style="border: 1px solid #c8ccd1; padding: 3px; background-color: #f8f9fa; font-size: 13.16px; text-align: center; overflow: hidden; width: 222px;">
+                              <img class="thumbimage" style="border: 1px solid #c8ccd1; vertical-align: middle; background-color: #ffffff;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Spain_-_Chile_-_10-09-2013_-_Geneva_-_Andres_Iniesta_1.jpg/220px-Spain_-_Chile_-_10-09-2013_-_Geneva_-_Andres_Iniesta_1.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Spain_-_Chile_-_10-09-2013_-_Geneva_-_Andres_Iniesta_1.jpg/330px-Spain_-_Chile_-_10-09-2013_-_Geneva_-_Andres_Iniesta_1.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Spain_-_Chile_-_10-09-2013_-_Geneva_-_Andres_Iniesta_1.jpg/440px-Spain_-_Chile_-_10-09-2013_-_Geneva_-_Andres_Iniesta_1.jpg 2x" alt="" width="220" height="332" data-file-width="2346" data-file-height="3542">
+                              <div class="thumbcaption" style="border: 0px; line-height: 1.4em; padding: 3px; font-size: 12.3704px; text-align: left;">
+                                   <div class="magnify" style="float: right; margin-left: 3px; margin-right: 0px;">&nbsp;</div>
+                                   Andres Iniesta as part of the Spanish national team
+                              </div>
+                         </div>
+                    </div>
+
+
+                    <p>&emsp;&emsp;&emsp;In the tournament, Iniesta scored two goals, played 6 matches (all at the start), played 557 minutes and received one yellow card (in the final). He entered the symbolic team of the championship and was nominated for the FIFA Golden Ball.</p>
+                    <p>&emsp;&emsp;&emsp;At Euro 2012, Spain won the trophy again. On July 1, the final of the tournament was held in Kiev, where Spain beat Italy 4-0. Iniesta was named Player of the match three times and played a key role in winning the title. He was also named player of the match in the final match. In total, Iniesta played in six matches at the tournament (all from the base) and spent 551 minutes on the fields of Ukraine and Poland, giving one assist. He entered the symbolic team of the tournament, and was also recognized as its best player. At the end of the year, Iniesta was nominated for the FIFA Golden Ball, where he finished third with 10.9% of the vote.</p>
+                    <p>&emsp;&emsp;&emsp;Having won as a member of the" Red Fury " at Euro 2012, Iniesta became the author of a unique achievement. He participated in six finals of major tournaments and won all of them:& nbsp; Champions League & nbsp;(2006, 2009, 2011,2015),&European Championship(2008, 2012) and World Championship (2010).</p>
+                    <p>&emsp;&emsp;&emsp;At the 2018 World Cup in Russia, the Spanish national team managed to get out of the group from the first place, but lost in the 1/8 finals to the host of the tournament in a penalty shootout (3:4). After the meeting, Iniesta announced his retirement from the Spanish national team.</p>
+                    <blockquote>
+                         <p>&nbsp; &nbsp; &nbsp;This was my last match for the Spanish national team. A wonderful period of my career in the national team has come to an end. The farewell to the national team did not turn out as we would like, but in football it happens.</p>
+                    </blockquote>
+                    <p>&nbsp;</p>
+                    <p><strong style=" font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px;">Personal life</strong></p>
+                    <p>&emsp;&emsp;&emsp;For three years, he was married to Anna Ortiz. On April 3, 2011, the couple had a daughter, Valeria. On July 8, 2012, the wedding took place. On May 31, 2015, a son, Paolo Andrea, was born. On May 16, 2017, daughter Sienna was born, and on June 21, 2019, the couple's second son and fourth child, Romeo, was born.</p>
+                    <p>&emsp;&emsp;&emsp;Andres Iniesta invested the majority of his career earnings in Bodega Iniesta winery. Acquired vineyards near his hometown of Fuente Villa.</p>
+                    <p>&nbsp;</p>
+
+
+                    <h2 style="color: #000000; background: none #ffffff; font-weight: normal; margin: 1em 0px 0.25em; overflow: hidden; padding: 0px; border-bottom: 1px solid #a2a9b1; font-size: 1.5em; font-family: 'Linux Libertine', Georgia, Times, serif; line-height: 1.3; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span id="Достижения" class="mw-headline">Achieves</span></h2>
+                    <div>&nbsp;</div>
+                    <h3 style="color: #000000; background: none #ffffff; font-weight: bold; margin: 0.3em 0px 0px; overflow: hidden; padding-top: 0.5em; padding-bottom: 0px; border-bottom: 0px; font-size: 1.2em; line-height: 1.6; font-family: sans-serif; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span id="Командные" class="mw-headline">Team's</span></h3>
+                    <p><img class="thumbborder" style="border: 1px solid #eaecf0; vertical-align: middle; margin: 0px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/20px-Flag_of_Spain.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/30px-Flag_of_Spain.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/40px-Flag_of_Spain.svg.png 2x" alt="Spain" width="20" height="13" data-file-width="750" data-file-height="500">&nbsp;<b style="font-weight: bold;">Barcelona</b></p>
+                    <ul style="list-style-image: url('/w/skins/Vector/resources/skins.vector.styles/images/bullet-icon.svg?872f1'); margin: 0.3em 0px 0px 1.6em; padding: 0px; color: #222222; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;">
+                         <li>Champion Spainи <b style="font-weight: bold;">(9)</b>: 2004/05, 2005/06, 2008/09, 2009/10, 2010/11, 2012/13, 2014/15, 2015/16, 2017/18</li>
+                         <li>Winner of the Cup of Spain <b style="font-weight: bold;">(6)</b>: 2008/09, 2011/12, 2014/15, 2015/16, 2016/17, 2017/18</li>
+                         <li>Winner Super Cup Spain <b style="font-weight: bold;">(7)</b>: 2005, 2006, 2009, 2010, 2011, 2013, 2016</li>
+                         <li>Winner UEFA Champions League<b style="font-weight: bold;">(4)</b>: 2005/06, 2008/09, 2010/11, 2014/15</li>
+                         <li>Winner Super Cup UEFA <b style="font-weight: bold;">(3)</b>: 2009, 2011, 2015</li>
+                         <li>Winner of the World Club Championship <b style="font-weight: bold;">(3)</b>: 2009, 2011, 2015</li>
+                    </ul>
+                    <p style="margin: 0.5em 0px; color: #222222; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;"><img class="thumbborder" style="border: 1px solid #eaecf0; vertical-align: middle; margin: 0px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/20px-Flag_of_Japan.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/30px-Flag_of_Japan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/40px-Flag_of_Japan.svg.png 2x" alt="Флаг Японии" width="20" height="13" data-file-width="900" data-file-height="600"> <b style="font-weight: bold;">Visel Cobe</b></p>
+                    <ul style="list-style-image: url('/w/skins/Vector/resources/skins.vector.styles/images/bullet-icon.svg?872f1'); margin: 0.3em 0px 0px 1.6em; padding: 0px; color: #222222; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;">
+                         <li>Japan Cup owner: 2019</li>
+                         <li>Winner Super Cup Japan: 2020</li>
+                    </ul>
+                    <p style="margin: 0.5em 0px; color: #222222; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;"><img class="thumbborder" style="border: 1px solid #eaecf0; vertical-align: middle; margin: 0px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/20px-Flag_of_Spain.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/30px-Flag_of_Spain.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/40px-Flag_of_Spain.svg.png 2x" alt="Флаг Испании" width="20" height="13" data-file-width="750" data-file-height="500"> <b style="font-weight: bold;">Spanish national team</b></p>
+                    <ul style="list-style-image: url('/w/skins/Vector/resources/skins.vector.styles/images/bullet-icon.svg?872f1'); margin: 0.3em 0px 0px 1.6em; padding: 0px; color: #222222; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;">
+                         <li>European champion among young men under 16: 2001</li>
+                         <li>European champion among young men until 19 years: 2002</li>
+                         <li>Champion of Europe <b style="font-weight: bold;">(2)</b>: 2008, 2012</li>
+                         <li>World champion: 2010</li>
+                    </ul>
+                    <h3 style="color: #000000; background: none #ffffff; font-weight: bold; margin: 0.3em 0px 0px; overflow: hidden; padding-top: 0.5em; padding-bottom: 0px; border-bottom: 0px; font-size: 1.2em; line-height: 1.6; font-family: sans-serif; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span id="Личные" class="mw-headline">Personal</span></h3>
+                    <ul style="list-style-image: url('/w/skins/Vector/resources/skins.vector.styles/images/bullet-icon.svg?872f1'); margin: 0.3em 0px 0px 1.6em; padding: 0px; color: #222222; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;">
+                         <li>The best midfielder of the Plan of Spanish Championship <b style="font-weight: bold;">(3)</b>: 2008/09, 2011/12, 2013/14</li>
+                         <li>Winner of the "Don Balon" Prize: 2008/09</li>
+                         <li>Second Player of the Spanish Championship (prize di Stefano): 2008/09</li>
+                         <li>The third player of the Spanish Championship (prize di Stefano) <b style="font-weight: bold;">(2)</b>: 2011/12, 2012/13</li>
+                         <li>The third European magazine player according to the French magazine Onze Mondial: 2009</li>
+                         <li>It is a member of the 2008 Championship Symbolic team according to UEFA</li>
+                         <li>Included in the symbolic national team of the 2010 World Championship according to FIFA</li>
+                         <li>It is part of the symbolic national team of the European Championship 2012 according to UEFA</li>
+                         <li>It is part of the symbolic national team of the XXI century according to UEFA</li>
+                         <li>Is part of the symbolic team of the world according to FIFA <b style="font-weight: bold;">(8)</b>: 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016</li>
+                         <li>Is part of the symbolic team of Europe according to UEFA <b style="font-weight: bold;">(6)</b>: 2009, 2010, 2011, 2012, 2015, 2016</li>
+                         <li>Included in the symbolic team according to FIFPro <b style="font-weight: bold;">(7)</b>: 2009, 2010, 2011, 2012, 2013, 2014, 2016</li>
+                         <li>It is included in the symbolic team of the UEFA Champions League <b style="font-weight: bold;">(2)</b>: 2010/11, 2013/14</li>
+                         <li>It is included in the symbolic team of the UEFA Champions League «L'Équipe» <b style="font-weight: bold;">(4)</b>: 2010, 2011, 2012, 2015</li>
+                         <li>Is part of the symbolic national team of the year according to <span class="iw plainlinks" data-title="ESM" data-lang="en" data-lang-name="англ.">ESM</span>: 2010/11</li>
+                         <li>It is part of the symbolic team of the Cup of Confederates 2013 according to FIFA</li>
+                         <li>Second football player of the world: 2010</li>
+                         <li>The best UEFA Champions League player 2011/12</li>
+                         <li>Best Euro Player 2012</li>
+                         <li>The best UEFA European Player: 2012</li>
+                         <li>It is part of the symbolic national team of the XXI century according to UEFA</li>
+                         <li>It is part of the symbolic national team of the XXI century according to UEFA IFFHS <b style="font-weight: bold;">(2)</b>: 2012, 2013</li>
+                         <li>The second play winder of the year according to IFFHS: 2015</li>
+                         <li>The second play winder of the year according to: 2012</li>
+                         <li>The second play winder of the year according to: 2013</li>
+                         <li>Winner of the Trophy "Legend" according to the newspaper readers «Marca»</li>
+                         <li>Winner award «Golden Foot»: 2014</li>
+                         <li>The best player of the UEFA Champions League Final 2014/15</li>
+                         <li>The winner of the bronze ball of the world championship: 2015</li>
+                         <li>The best player of the World Championship Final 2010</li>
+                         <li>The best player of the finals of the European Championship 2012</li>
+                    </ul>
+
+               </div>
+          </div>
+     </div>
+
+
+
+
+
+
+     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+          <div class="table-responsive">
+               <table class="table table-striped jsTableCareer">
+                    <thead>
+                         <tr>
+                              <th width="15%">Season</th>
+                              <th width="20%">Team</th>
+                              <th width="5%"><img src="https://barcaman.ru/components/com_joomsport/img/squad.png" width="24" class="sub-player-ico" title="The starting squad of the match" alt="The starting squad of the match"></th>
+                              <th width="5%"><img src="https://barcaman.ru/components/com_joomsport/img/stopwatch.png" width="24" class="sub-player-ico" title="Minutes played" alt="Minutes played"></th>
+                              <th width="5%"><img src="https://barcaman.ru/components/com_joomsport/img/ico/in-new.png" width="24" class="sub-player-ico" title="Exit from stock" alt="Exit from stock"></th>
+                              <th width="5%"><img src="https://barcaman.ru/components/com_joomsport/img/ico/out-new.png" width="24" class="sub-player-ico" title="Posted on replacement" alt="Posted on replacement"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_assisten_color_100x100.png" width="24" title="Assist"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_GOAL_OWN_GOAL_110x110.png" width="24" title="Autogoal"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_GOAL_50x50.png" width="24" title="Goal"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_GOAL_PENALTY_GOAL_1.png" width="24" title="Kicked penalty"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_PENALTY_MISS.png" width="24" title="Not kicked penalty"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_Field_Ball.png" width="24" title="Total number of goals"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_GOAL_PENALTY_GOAL_1.png" width="24" title="Post-matches kicked penalty"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_PENALTY_MISS.png" width="24" title="Post-matches not kicked penalty"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_YELLOW_CARD_3.png" width="24" title="Yellow card"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_RED_CARD.png" width="24" title="Red card"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_RED_YELLOW_CARD.png" width="24" title="Second yellow card"></th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         @foreach (var item in ViewBag.Championships)
+                         {
+                         <tr>
+                              <td>@item</td>
+                              <td><img alt="" class="img-thumbnail img-responsive emblInline" src="https://barcaman.ru/media/bearleague/thumb/bl15179076121892.png" width="40">Barcelona</td>
+                              @for (int k = 0; k < 15; k++)
+                              {
+                                   <td>@ViewBag.Goals[j, k]</td>
+                              }
+
+                              <span style="display:none">@(j = j + 1);</span>
+                         </tr>
+
+                         }
+
+                    </tbody>
+               </table>
+          </div>
+
+
+
+
+          <div class="center-block jscenter" style="padding-top:20px; text-align:center;">
+               <h3 class="jsCreerMatchStath3">Match statistics</h3>
+          </div>
+          <div class="table-responsive">
+               <table class="table">
+                    <tbody>
+                         @foreach (var item in ViewBag.Data)
+                         {
+                              <tr>
+                                   <td class="matches">
+                                        <div class="jstable-cell jsMatchDivTime">
+                                             <div class="jsDivLineEmbl">@item</div>
+                                        </div>
+                                   </td>
+                                   <td class="matches">
+                                        <div class="jstable-cell jsMatchDivHome">
+                                             <div class="jsDivLineEmbl"><div class="js_div_particName">@ViewBag.Home[i]</div></div>
+                                        </div>
+                                   </td>
+                                   <td class="matches">
+                                        <div class="jstable-cell jsMatchDivHomeEmbl">
+                                             <div class="jsDivLineEmbl"><img alt="" class="img-thumbnail img-responsive emblInline" src="@ViewBag.HomeImg[i]" width="40"></div>
+
+                                        </div>
+                                   </td>
+                                   <td class="matches">
+                                        <div class="jstable-cell jsMatchDivScore">
+                                             <div data-html="true" class="jsScoreDiv " data-toggle2="tooltipJSF" data-placement="bottom" title="" data-original-title="">@ViewBag.Score[i]</div>
+                                        </div>
+                                   </td>
+                                   <td class="matches">
+                                        <div class="jstable-cell jsMatchDivAwayEmbl">
+                                             <div class="jsDivLineEmbl"><img alt="" class="img-thumbnail img-responsive emblInline" src="@ViewBag.AwayImg[i]" width="40"></div>
+                                        </div>
+                                   </td>
+                                   <td class="matches">
+                                        <div class="jstable-cell jsMatchDivAway">
+                                             <div class="jsDivLineEmbl">
+                                                  <div class="js_div_particName">@ViewBag.Away[i]</div>
+                                             </div>
+                                        </div>
+                                   </td>
+                                   <td class="matches">
+                                        <div class="jstable-cell">
+                                             <img alt="" class="img-responsive  emblpadd3" src="@ViewBag.Efective[i]" width="24" title="Гол 56'">
+                                        </div>
+                                   </td>
+                                   <td class="matches"><div class="jstable-cell">@ViewBag.Minutes[i]'</div></td>
+                              </tr>
+                              <span style="display:none">@(i = i + 1);</span>
+                         }
+
+
+
+                    </tbody>
+               </table>
+          </div>
+
+
+     </div>
+
+     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="jsOverflowHidden">
+               <ul>
+                    <li class="col-xs-6 col-sm-3 col-md-3 col-lg-2" id="1">
+                         <a href="https://barcaman.ru/media/bearleague/thumb/bl15189939532748.jpg" id="1" onclick="function('1')">
+                              <img alt="" class="img-thumbnail img-responsive" src="https://barcaman.ru/media/bearleague/thumb/bl15189939532748.jpg" width="120">
+                         </a>
+                    </li>
+
+                    <li class="col-xs-6 col-sm-3 col-md-3 col-lg-2" id="2">
+                         <a href="https://barcaman.ru/media/bearleague/thumb/bl15189939591829.jpg" id="2" onclick="function('2')">
+                              <img alt="" class="img-thumbnail img-responsive" src="https://barcaman.ru/media/bearleague/thumb/bl15189939591829.jpg" width="120">
+                         </a>
+                    </li>
+
+                    <li class="col-xs-6 col-sm-3 col-md-3 col-lg-2" id="3">
+                         <a href="https://barcaman.ru/media/bearleague/thumb/bl1518993980628.jpg" id="3" onclick="function('3')">
+                              <img alt="" class="img-thumbnail img-responsive" src="https://barcaman.ru/media/bearleague/thumb/bl1518993980628.jpg" width="120">
+                         </a>
+                    </li>
+               </ul>
+          </div>
+     </div>
+</div>
+
+<script type="text/javascript">
+          function (var id) {
+               var x = document.getElementById(id);
+               $(x).modal();
+          }
+</script>
+

@@ -1,0 +1,55 @@
+﻿@model Final.Models.LoginModel
+
+@{
+     ViewBag.Title = "Login";
+}
+
+<style>
+     img.avatar {
+          width: 50%;
+          border-radius: 50%;
+     }
+</style>
+
+
+@using (Html.BeginForm())
+{
+     <hr />
+     @Html.AntiForgeryToken()
+     <div style="width:100%; height:288px;">
+          <div style="width:50%; margin-left: 37%;"><img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" class="avatar" class="center"></div>
+     </div>
+          <hr />
+
+     <div class="form-horizontal" style="padding-left:154px;">
+          @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+          <div class="form-group">
+               @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+               <div class="col-md-10">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+               </div>
+          </div>
+
+          <div class="form-group">
+               @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+               <div class="col-md-10">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+               </div>
+          </div>
+
+          <div class="form-group">
+               <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+               </div>
+          </div>
+
+     </div>
+}
+
+@section Scripts {
+     @Scripts.Render("~/bundles/jqueryval")
+}
+
+

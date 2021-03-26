@@ -1,0 +1,25 @@
+﻿@model Final.Models.New
+
+@{
+     ViewBag.Title = "DeleteNew";
+}
+
+<h2>DeleteNew</h2>
+
+<dl>
+     <dt>Name</dt>
+     <dd>@Html.DisplayFor(model => model.PicturePath)</dd>
+
+     <dt>Title</dt>
+     <dd>@Html.DisplayFor(model => model.Title)</dd>
+
+     <dt>Born Date</dt>
+     <dd>@Html.DisplayFor(model => model.Content)</dd>
+
+
+</dl>
+
+@using (Html.BeginForm())
+{
+     <input type="submit" value="Delete" />
+}

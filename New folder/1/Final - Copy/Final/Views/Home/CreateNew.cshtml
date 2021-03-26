@@ -1,0 +1,66 @@
+﻿@model Final.Models.New
+
+@{
+     ViewBag.Title = "CreateNews";
+}
+<script src="~/Scripts/ckeditor4/ckeditor.js"></script>
+
+<div style="padding:5%;">
+     @using (Html.BeginForm())
+     {
+          <p>
+               <b>Picture URL:</b>
+               @Html.EditorFor(model => model.PicturePath)
+          </p>
+
+          <p>
+               <b>
+                    Title:<br />
+               </b>
+               <div>
+                    <div>
+                         <textarea id="title" name="Title"></textarea>
+                    </div>
+               </div>
+          </p>
+
+          <p>
+               <b>
+                    Short Description:<br />
+               </b>
+
+               <div>
+                    <textarea id="shortDescription" name="ShortDescription"></textarea>
+               </div>
+          </p>
+
+          <p>
+               <b>
+                    Full Content:<br />
+               </b>
+
+               <div>
+                    <textarea id="fullContent" name="FullContent"></textarea>
+               </div>
+          </p>
+
+          <div>
+               <div style="width:20%; margin:0 auto;">
+                    <input type="submit" value="Create" />
+               </div>
+
+          </div>
+
+     }
+</div>
+
+<script>
+     document.addEventListener("DOMContentLoaded", function (event) {
+          var title = CKEDITOR.replace('title');
+          var sortDescription = CKEDITOR.replace('shortDescription');
+          var fullContent = CKEDITOR.replace('fullContent');
+
+          //ClassicEditor.create(document.querySelector('#content1'));
+     });
+</script>
+

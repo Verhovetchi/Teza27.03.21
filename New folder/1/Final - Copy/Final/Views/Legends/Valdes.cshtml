@@ -1,0 +1,373 @@
+﻿@{
+     ViewBag.Title = "Victor Valdes";
+     int i = 0;
+     int j = 0;
+}
+
+<style>
+     .field {
+          width: 50%;
+          float: left;
+     }
+
+     .value {
+          width: 50%;
+          float: right;
+     }
+
+     .jstable {
+          width: 90%;
+          height: 100%;
+          border: solid 1px gray;
+          background: #F5F5F5;
+          border-radius: 13px;
+          padding: 20px;
+          margin: 0 auto;
+          margin-bottom: 15px;
+     }
+
+     .table {
+          margin: 0 auto;
+          width: 90%;
+     }
+
+     .matches {
+          width: 10%;
+     }
+</style>
+
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+     <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Overview</a>
+     </li>
+     <li>
+          <i class="js-player"></i>
+
+     </li>
+     <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Statistics</a>
+     </li>
+     <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Foto</a>
+     </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+
+     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="row" style="padding:30px;">
+               <div class="col-xs-12 rmpadd" style="padding-right:0px; width:100%;">
+                    <div class="jsObjectPhoto rmpadd">
+                         <div class="photoPlayer" style="width:50%; float:left;">
+                              <img alt="" class="img-thumbnail img-responsive" src="https://www.fcbarcelona.com/fcbarcelona/photo/2018/03/19/c6fccef9-a3ab-427f-9056-27951b293945/4696525.jpg" width="610" style="width:610px;">
+                         </div>
+
+                    </div>
+                    <div class="well well-sm pt10 extrafldcn" style="float:right; margin-right:50px; margin-top:10px;">
+                         <div class="well well-sm pt10 extrafldcn">
+                              <div class="jstable" style="width:430px; padding:10px; margin-top:-7px; height:366px; padding-top:35px;">
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Name:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Victor
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Surname:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Valdes
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Nickname:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Hospitality Panther
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Team:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Barcelona
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Country:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             <img src="https://barcaman.ru/components/com_joomsport/img/flags/es.png" alt="Испания">
+                                             Spain
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Position:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Goalkeeper
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Born:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             14.01.1982
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Height(cm):
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             183 см
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Weight(kg):
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             78 kg
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  Contract type:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Contract
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  In the club since:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             15.02.1992
+                                        </div>
+                                   </div>
+
+                                   <div class="jstable-row">
+                                        <div class="jstable-cell field">
+                                             <strong>
+                                                  In the club until:
+                                             </strong>
+                                        </div>
+                                        <div class="jstable-cell value">
+                                             Until summer 2014
+                                        </div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="col-xs-12 rmpadd" style="padding-right:0px;">
+                    <p>
+                         &emsp;&emsp;&emsp;
+                         <strong>Victor Valdes Aribas</strong> (esp. <em>Víctor Valdés Arribas</em>; born 14 january 1982, Ospithalet, Catalunia) — Spanish footballer who played as a goalkeeper. From 2002 to 2014 he played for Barcelona. Record holder among goalkeepers in matches played in the history of the club.
+                    </p>
+                    <p>
+                         &emsp;&emsp;&emsp;
+                         In his entire career at the Catalan club, Valdez became the Spanish champion six times and won the UEFA Champions League three times. As part of the Spanish national team, he won the 2010 World Cup and Euro 2012, but he was never considered the main guardian of the gates of the "red fury", losing in competition to the then leader Iker Casillas.
+                    </p>
+                    <p>
+                         <strong>
+                              &emsp;&emsp;&emsp;
+                              Biography
+                         </strong>
+                    </p>
+                    <p>
+                         &emsp;&emsp;&emsp;
+                         Victor Valdes was born in the city of Hospitalet in the province of Barcelona and at the age of 10 got into the academy of the main club of Catalonia. However, two years later, his family moved to Tenerife, but returned in 1995, and the 13-year-old Victor again began to study at the Barcelona school.
+                    </p>
+                    <p><strong>&emsp;&emsp;&emsp;Club career</strong></p>
+                    <p>
+                         &emsp;&emsp;&emsp;At the age of 17, Victor Valdes already defended the goal of Barcelona B, the blue garnet farm club, which played in the Spanish second division. Valdez's rival was Pepe Reina, who was considered the more talented goalkeeper.
+                    </p>
+                    <p><strong>&emsp;&emsp;&emsp;Barcelona</strong></p>
+                    <p>&emsp;&emsp;&emsp;After his return, he managed to quickly reach sporting heights. In the 2002/2003 season, Valdes was the understudy of the Argentine goalkeeper Roberto Bonano, but the uncertain game of the Argentine and the arrival of coach Radomir Antic at the club allowed Victor to take a place in the goal of Barcelona. On 1 September 2002, Valdes made his first-team debut for Barcelona against Atletico Madrid (2-2). During the season, the young goalkeeper played 14 matches, conceding 15 goals. He played six more matches in the Champions League, where he conceded three goals. Subsequently, the former Manager of "blaugranas" Louis van Gaal has decided to withdraw the Spaniard from the main structure. Victor went to the second team of the Catalans, but considered it a humiliation and wanted to leave Barcelona completely. However, in the middle of the season, van Gaal was fired, and Radomir Antic, who came to the post of head coach, made a bet on the young pupil of Kantera.</p>
+                    <p>&emsp;&emsp;&emsp;In the 2003-04 season, Valdes managed to hold the number 1 position even after the arrival of Turkish goalkeeper Ryushtu Rechber (bronze medalist of the 2002 World Cup), who made too many mistakes in games. In the 2004-05 season, Victor Valdes played in almost all the matches of the "blue-garnet" and helped Barcelona to win the first league title in the last six years. He also received the Zamora Award, which is awarded to the best goalkeeper in the Spanish championship.</p>
+                    <p>&emsp;&emsp;&emsp;The 2005-06 season was very successful for the club. The Catalan again played in almost all matches, allowing the team to win a second league title in a row, and also saved the team twice after Thierry Henry's dangerous strikes in the 2005-06 Champions League final for Barcelona. For his performance, Valdes received the warmest reviews from his coach, Frank Rijkaard. Among the candidates for the Zamora Award this season, he was third, behind Jose Manuel Pinto and Santiago Canizares.</p>
+                    <p>&emsp;&emsp;&emsp;On June 17, 2007, in the last round of the Spanish championship, Victor repeated the goalkeeping record of Barcelona, set by the legendary Andoni Subizarreta. No one except the Zubizarreta and valdés didn't gate "Barcelona" all championship matches of the season from beginning to end.</p>
+                    <p>&emsp;&emsp;&emsp;The 2007-08 season was a failure for blaugrana in general — unclear transfer policy on the eve of the summer, intrigue in the dressing room, third place (after Real Madrid and Villarreal) in the Example, two defeats in El Clasico (0: 1 at home and 1: 4 away), finally, Valdes was no exception — instead of Canizares, Andres Palop from Sevilla went to Euro 2008, and not Victor.</p>
+                    <p>&emsp;&emsp;&emsp;In the 2008-09 season, Valdes played 35 games out of 38 and conceded 31 goals, which is also a record of "that time" for Victor. El Clasico against Real Madrid is particularly memorable. In the first round, the Catalans won with a score of 2: 0, Leo Messi and Eto'O scored. And in the second round at the Santiago Bernabeu stadium, the Catalans defeated the opponent with a score of 2: 6, but Valdes entered the game several times and saved his goal from conceding goals. On November 8, 2008, Valdes played his 200th game in a Barcelona shirt, becoming the youngest goalkeeper of the Blue-Garnet team to reach this milestone. In the group stage of the Champions League, Valdes showed himself quite well: he conceded five goals in five matches. In the 1/8 final against Lyon, Valdes conceded three goals, but Barcelona forward Thierry Henry corrected the mistakes made by Valdes. In the 1/4 final against Bayern, Viktor conceded only one goal (the overall score was 5: 1). In the semi-final against Chelsea, Victor missed in the fifth minute, but in the last minutes Andres Iniesta brought the team an equal score-1: 1. In the final against Manchester United, the Catalans won with a score of 2: 0, and the goal of Valdez remained "dry"all the match.</p>
+                    <p>&emsp;&emsp;&emsp;In the 2009-10 season in the Spanish league, Valdes played all the matches without substitutions and conceded only 24 goals. This indicator was the best for Viktor for all the time of performances for the "blue-garnet". At the end of the season, Valdez won another "Zamora Trophy", which was his third, awarded annually to the best goalkeeper of the Spanish Primera who conceded the least goals. In the UEFA Champions League, Valdes performed very well, but Barcelona only reached the semi-finals, losing to the future champion-Internazionale Milan. In the group stage, Viktor played all six matches and conceded only three goals, which is his personal best in the history of performances. In the playoff rounds, Valdes conceded 7 goals in 6 games.</p>
+                    <p>&emsp;&emsp;&emsp;The first match for Valdes in the 2010/11 championship was a match with Racing (3: 0), the Catalans played dry. In total, he played 32 matches in the league, in which he conceded 16 goals, which helped him win the Zamora Trophy again (for the 4th time in his career).</p>
+                    <p>&emsp;&emsp;&emsp;In the 2011/12 season, after the last match with Betis in the Spanish league (round 38) For the 5th time, Valdes received the "Zamora Trophy", which is awarded to the best goalkeeper of the Spanish championship, who conceded the least goals in the tournament. Valdes has conceded 29 goals in 35 games. He did not participate in the Spanish Cup.</p>
+                    <p>&emsp;&emsp;&emsp;29 августа 2011 года провёл свой 410-й матч в сине-гранатовой футболке, обойдя по этому показатаеля другого испанского вратаря — Андони Субисаррету.</p>
+                    <p>&emsp;&emsp;&emsp;In the 2011-12 season, Valdes played 24 matches: 17 matches of the Spanish championship, four matches of the UEFA Champions League, two matches of the Club World Cup and one match of the UEFA Super Cup.</p>
+                    <p>&emsp;&emsp;&emsp;On November 25, 2012, in the match of the Spanish championship against Levante (4: 0), the goalkeeper took a penalty from the opponent's player in the last minutes of the match, as well as two subsequent finishes. On January 18, 2013, Valdes signed a new contract with the club, which will last until June 30, 2014. He later announced that he would move from Barcelona to another club next summer.</p>
+                    <p>&emsp;&emsp;&emsp;On 2 March 2013, Valdes received a red card in a Spanish league match against Real Madrid for insulting the referee after the final whistle. The match ended with the defeat of the "Catalans" with the score 1: 2. The disqualification was 4 matches of the championship. In the 2012/2013 season, Victor" nil " defended eight matches: five league matches and three Champions League matches, including a comeback match against AC Milan with a score of 4: 0, thanks to which Barcelona reached the 1/4 finals of the UEFA Champions League.</p>
+                    <p>&emsp;&emsp;&emsp;In the fall of 2013, the Spaniard received a serious injury, which caused him to fly out for a long time. Barcelona offered him a new contract, but he refused. It was expected that Valdes would join Monaco in the winter, but the Monegasques did not dare to sign a contract with the injured goalkeeper. As a result, Valdes was left without big-time football for almost a year.</p>
+                    <p><strong>&emsp;&emsp;&emsp;Manchester United</strong></p>
+                    <p>&emsp;&emsp;&emsp;In January 2015, Valdes signed a one-year contract with Manchester United. On 17 May 2015, he came on as a substitute against Arsenal in the 76th minute and conceded one goal-this was his first match. In the second match on May 24, he was in the starting line-up against Hull City, he defended for zero.</p>
+                    <p>&emsp;&emsp;&emsp;Valdes had a falling out with the Manchester United manager in the off-season, which resulted in him not going on the club's annual tour of the United States and was heavily criticized by Van Gaal. At the beginning of the season, the coaching staff did not include Victor in the season's application and made it clear that he needed to leave the club, but Valdes did not leave in the summer transfer window.</p>
+                    <p><strong>&emsp;&emsp;&emsp;Standard</strong></p>
+                    <p>&emsp;&emsp;&emsp;On 24 January 2016, he moved on loan to Standard Liege. With this team, he was able to become the winner of the Belgian Cup.</p>
+                    <p><strong>&emsp;&emsp;&emsp;Middlesbrough</strong></p>
+                    <p>&emsp;&emsp;&emsp;On 7 July 2016, Valdes moved to Middlesbrough on a free transfer, signing a two-year contract. The goalkeeper made his debut in the match of the 1st round of the Premier League against Stoke City (1: 1). The Spaniard made 28 appearances for Middlesbrough in the English league, in which he conceded 36 goals. At the end of the season, the team was relegated from the Premier League and on May 24, by mutual consent, Valdez terminated his contract with the club.</p>
+                    <p>&emsp;&emsp;&emsp;After receiving the status of a free agent, the player was interested in clubs from the top division of Spain. "Betis", "Deportivo" and Las Palmas " offered the player a contract. However, Victor Valdes decided to retire and officially announced it on August 17, 2017.</p>
+                    <p><strong>&emsp;&emsp;&emsp;National team career</strong></p>
+                    <p>&emsp;&emsp;&emsp;Due to the high competition in the goalkeeper position, it was very difficult for Valdez to make his debut in the national team for a long time. The main goalkeeper of the team is Iker Casillas from Real Madrid, who has secured a place in the squad. However, Barcelona's outstanding performance in recent seasons left the head coach with no choice, and Valdes was included in the Spanish national team's World Cup bid in South Africa as the team's third goalkeeper. Without playing a single match in the tournament, Victor nevertheless became the world champion.</p>
+                    <p>&emsp;&emsp;&emsp;On June 3, he played his first match in a Spanish national team shirt in a friendly match against South Korea, replacing Pepe Reina during the match. The match ended with the victory of the Red Fury with a score of 1:0, Victor played the match to "zero". In 2012, Valdes was in the bid for the 2012 European Championship, where Spain also won the title.</p>
+                    <p><strong>&emsp;&emsp;&emsp;Coaching career</strong></p>
+                    <p><strong>&emsp;&emsp;&emsp;Barcelona U19</strong></p>
+                    <p>&emsp;&emsp;&emsp;In July 2019, Valdes took over as head coach of the Catalan U19 age group team. The contract with the specialist is valid until the end of the 2019/20 season and provides for an option to extend it for another year. In mid-June, Valdes, along with several other famous players in the past, became the owner of the UEFA Pro coaching license.</p>
+                    <p><strong>&emsp;&emsp;&emsp;Characteristics</strong></p>
+                    <p>&emsp;&emsp;&emsp;Victor Valdes is a very agile goalkeeper who knows how to manage the team's defense well. His reflexes allow him to successfully repel blows, and good dexterity allows him to help out when going 1 on 1. As a goalkeeper of the modern model, he plays quite confidently outside the goalie's zone, winning single combats with attackers, beating them with a light movement of the body. However, sometimes he makes quite rude goalkeeping mistakes (perhaps because of this, he was not called up to the Spanish national team for a long time). These errors were called "valdesadas"by Spanish commentators[19]. His idols are German Oliver Kahn and compatriot Santiago Canizares, whose style of play Valdez is trying to adopt.</p>
+                    <p><strong>&emsp;&emsp;&emsp;Personal life</strong></p>
+                    <p>&emsp;&emsp;&emsp;Dating Yolanda Cardona. On August 20, 2009, their son Dylan was born. The second son, Kai, was born on November 16, 2012. On October 3, 2013, the couple had a daughter, Vera.</p>
+                    <h2 style="color: #000000; background: none #ffffff; font-weight: normal; margin: 1em 0px 0.25em; overflow: hidden; padding: 0px; border-bottom: 1px solid #a2a9b1; font-size: 1.5em; font-family: 'Linux Libertine', Georgia, Times, serif; line-height: 1.3; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span id="Progress" class="mw-headline">Progress</span></h2>
+                    <p style="margin: 0.5em 0px; color: #202122; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;"><b style="font-weight: bold;">«Barcelona»</b></p>
+                    <ul style="list-style-image: url('/w/skins/Vector/resources/skins.vector.styles/images/bullet-icon.svg?d4515'); margin: 0.3em 0px 0px 1.6em; padding: 0px; color: #202122; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;">
+                         <li style="margin-bottom: 0.1em;"> Champion of Spain <b style="font-weight: bold;">(6)</b>: 2004/05, 2005/06, 2008/09, 2009/10, 2010/11, 2012/13</li>
+                         <li style="margin-bottom: 0.1em;">The Winner Of The Cup Of Spain <b style="font-weight: bold;">(2)</b>: 2008/09, 2011/12</li>
+                         <li style="margin-bottom: 0.1em;">Winner of the Spanish Super Cup <b style="font-weight: bold;">(6)</b>: 2005, 2006, 2009, 2010, 2011, 2013</li>
+                         <li style="margin-bottom: 0.1em;">Winner of the UEFA Champions League <b style="font-weight: bold;">(3)</b>: 2005/06, 2008/09, 2010/11</li>
+                         <li style="margin-bottom: 0.1em;">The winner of the UEFA super Cup <b style="font-weight: bold;">(2)</b>: 2009, 2011</li>
+                         <li style="margin-bottom: 0.1em;">Winner of the Club World Cup <b style="font-weight: bold;">(2)</b>: 2009, 2011</li>
+                    </ul>
+                    <p style="margin: 0.5em 0px; color: #202122; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;"><b style="font-weight: bold;">"Standard" (Liège)</b></p>
+                    <ul style="list-style-image: url('/w/skins/Vector/resources/skins.vector.styles/images/bullet-icon.svg?d4515'); margin: 0.3em 0px 0px 1.6em; padding: 0px; color: #202122; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;">
+                         <li style="margin-bottom: 0.1em;">The Winner Of The Cup Of Belgium: 2015/16</li>
+                    </ul>
+                    <p style="margin: 0.5em 0px; color: #202122; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;"><b style="font-weight: bold;">Spain national team</b></p>
+                    <ul style="list-style-image: url('/w/skins/Vector/resources/skins.vector.styles/images/bullet-icon.svg?d4515'); margin: 0.3em 0px 0px 1.6em; padding: 0px; color: #202122; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;">
+                         <li style="margin-bottom: 0.1em;">World Champion: 2010</li>
+                         <li style="margin-bottom: 0.1em;">European Champion: 2012</li>
+                    </ul>
+                    <h3 style="color: #000000; background: none #ffffff; font-weight: bold; margin: 0.3em 0px 0px; overflow: hidden; padding-top: 0.5em; padding-bottom: 0px; border-bottom: 0px; font-size: 1.2em; line-height: 1.6; font-family: sans-serif; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span id="Личные" class="mw-headline">Personal</span></h3>
+                    <ul style="list-style-image: url('/w/skins/Vector/resources/skins.vector.styles/images/bullet-icon.svg?d4515'); margin: 0.3em 0px 0px 1.6em; padding: 0px; color: #202122; font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;">
+                         <li style="margin-bottom: 0.1em;">Winner of the Zamora Trophy <b style="font-weight: bold;">(5)</b>: 2004/05, 2008/09, 2009/10, 2010/11, 2011/12</li>
+                         <li style="margin-bottom: 0.1em;">Best goalkeeper of the Spanish Championship <b style="font-weight: bold;">(2)</b>: 2009/10, 2010/11</li>
+                         <li style="margin-bottom: 0.1em;">ESM Team of the Year: 2010/11</li>
+                    </ul>
+               </div>
+          </div>
+     </div>
+
+     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+          <div class="table-responsive">
+               <table class="table table-striped jsTableCareer" style="margin-bottom:10px;">
+                    <thead>
+                         <tr>
+                              <th width="15%">Season</th>
+                              <th width="20%">Team</th>
+                              <th width="5%"><img src="https://barcaman.ru/components/com_joomsport/img/squad.png" width="24" class="sub-player-ico" title="The starting squad of the match" alt="The starting squad of the match"></th>
+                              <th width="5%"><img src="https://barcaman.ru/components/com_joomsport/img/stopwatch.png" width="24" class="sub-player-ico" title="Minutes played" alt="Minutes played"></th>
+                              <th width="5%"><img src="https://barcaman.ru/components/com_joomsport/img/ico/in-new.png" width="24" class="sub-player-ico" title="Exit from stock" alt="Exit from stock"></th>
+                              <th width="5%"><img src="https://barcaman.ru/components/com_joomsport/img/ico/out-new.png" width="24" class="sub-player-ico" title="Posted on replacement" alt="Posted on replacement"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_assisten_color_100x100.png" width="24" title="Assist"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_GOAL_OWN_GOAL_110x110.png" width="24" title="Autogoal"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_GOAL_50x50.png" width="24" title="Goal"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_GOAL_PENALTY_GOAL_1.png" width="24" title="Kicked penalty"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_PENALTY_MISS.png" width="24" title="Not kicked penalty"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_Field_Ball.png" width="24" title="Total number of goals"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_GOAL_PENALTY_GOAL_1.png" width="24" title="Post-matches kicked penalty"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_PENALTY_MISS.png" width="24" title="Post-matches not kicked penalty"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_YELLOW_CARD_3.png" width="24" title="Yellow card"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_RED_CARD.png" width="24" title="Red card"></th>
+                              <th width="5%"><img alt="" class="img-responsive  emblpadd3" src="https://barcaman.ru/media/bearleague/thumb/Soccer_RED_YELLOW_CARD.png" width="24" title="Second yellow card"></th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         @foreach (var item in ViewBag.Championships)
+                         {
+                              <tr>
+                                   <td>@item</td>
+                                   <td><img alt="" class="img-thumbnail img-responsive emblInline" src="https://barcaman.ru/media/bearleague/thumb/bl15179076121892.png" width="40">Barcelona</td>
+                                   @for (int k = 0; k < 15; k++)
+                                   {
+                                        <td>@ViewBag.Goals[j, k]</td>
+                                   }
+
+                                   <span style="display:none">@(j = j + 1);</span>
+                              </tr>
+                         }
+                    </tbody>
+               </table>
+          </div>
+
+
+
+     </div>
+
+
+
+
+     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="jsOverflowHidden">
+               <ul>
+                    <li class="col-xs-6 col-sm-3 col-md-3 col-lg-2" id="1">
+                         <a href="https://talksport.com/wp-content/uploads/sites/5/2019/10/NINTCHDBPICT000529462986.jpg?strip=all&quality=100&w=1200&h=800&crop=1" id="1" onclick="function('1')">
+                              <img alt="" class="img-thumbnail img-responsive" src="https://talksport.com/wp-content/uploads/sites/5/2019/10/NINTCHDBPICT000529462986.jpg?strip=all&quality=100&w=1200&h=800&crop=1" width="120">
+                         </a>
+
+                    </li>
+
+                    <li class="col-xs-6 col-sm-3 col-md-3 col-lg-2" id="2">
+                         <a href="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/10/07/15704345686991.jpg" id="2" onclick="function('2')">
+                              <img alt="" class="img-thumbnail img-responsive" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/10/07/15704345686991.jpg" width="120">
+                         </a>
+                    </li>
+
+                    <li class="col-xs-6 col-sm-3 col-md-3 col-lg-2" id="3">
+                         <a href="https://www.fcbarcelona.com/fcbarcelona/photo/2018/03/19/c6fccef9-a3ab-427f-9056-27951b293945/4696525.jpg" id="3" onclick="function('3')">
+                              <img alt="" class="img-thumbnail img-responsive" src="https://www.fcbarcelona.com/fcbarcelona/photo/2018/03/19/c6fccef9-a3ab-427f-9056-27951b293945/4696525.jpg" width="120">
+                         </a>
+                    </li>
+               </ul>
+          </div>
+     </div>
+</div>
+
+<script type="text/javascript">
+     function (var id) {
+          var x = document.getElementById(id);
+     $(x).modal();
+          }
+</script>

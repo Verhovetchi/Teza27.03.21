@@ -1,0 +1,97 @@
+﻿@model Final.Models.New
+
+@{
+     ViewBag.Title = "EditNew";
+}
+<script src="~/Scripts/ckeditor4/ckeditor.js"></script>
+
+<h2>Edit New</h2>
+
+<div style="padding:5%;">
+     @using (Html.BeginForm())
+     {
+          <fieldset>
+               @Html.HiddenFor(m => m.Id)
+
+
+               @*<p>
+                         @Html.LabelFor(m => m.PicturePath)
+                         <br />
+                         @Html.EditorFor(m => m.PicturePath)
+                    </p>
+
+                    <p>
+                         @Html.LabelFor(m => m.Title)
+                         <br />
+                         @Html.EditorFor(m => m.Title)
+                    </p>
+
+                    <p>
+                         @Html.LabelFor(m => m.ShortDescription)
+                         <br />
+                         @Html.EditorFor(m => m.ShortDescription)
+                    </p>
+
+                    <p>
+                         @Html.LabelFor(m => m.FullContent)
+                         <br />
+                         @Html.EditorFor(m => m.FullContent)
+                    </p>*@
+
+
+               <p>
+                    <b>Picture URL:</b>
+                    @Html.EditorFor(model => model.PicturePath)
+               </p>
+
+               <p>
+                    <b>
+                         Title:<br />
+                    </b>
+                    <div>
+                         <div>
+                              <textarea id="title" name="Title">@(Model.Title)</textarea>
+                         </div>
+                    </div>
+               </p>
+
+               <p>
+                    <b>
+                         Short Description:<br />
+                    </b>
+
+                    <div>
+                         <textarea id="shortDescription" name="ShortDescription">
+                              @(Model.ShortDescription)
+                         </textarea>
+                    </div>
+               </p>
+
+               <p>
+                    <b>
+                         Full Content:<br />
+                    </b>
+
+                    <div>
+                         <textarea id="fullContent" name="FullContent">
+                              @(Model.FullContent)
+                         </textarea>
+                    </div>
+               </p>
+
+               <p>
+                    <input type="submit" value="Save" />
+               </p>
+
+          </fieldset>
+     }
+</div>
+     <script>
+          document.addEventListener("DOMContentLoaded", function (event) {
+               var title = CKEDITOR.replace('title');
+               var sortDescription = CKEDITOR.replace('shortDescription');
+               var fullContent = CKEDITOR.replace('fullContent');
+
+               //ClassicEditor.create(document.querySelector('#content1'));
+          });
+     </script>

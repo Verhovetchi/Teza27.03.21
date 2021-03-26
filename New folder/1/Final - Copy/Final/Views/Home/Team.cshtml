@@ -1,0 +1,147 @@
+﻿@{
+     ViewBag.Title = "Team";
+}
+
+     
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+               <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Squad</a>
+               </li>
+               <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+               </li>
+               <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+               </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                    <table class="table table-sm">
+                         <thead>
+                              <tr>
+                                   <th scope="col">Num.</th>
+                                   <th scope="col">Name</th>
+                                   <th scope="col">Surname</th>
+                                   <th scope="col">Age</th>
+                                   <th scope="col">Position</th>
+                                   <th scope="col">Height</th>
+                                   <th scope="col">Weight</th>
+                              </tr>
+                         </thead>
+                         <tbody>
+                              @foreach (var item in ViewBag.Players)
+                              {
+                              <tr>
+                                   <td class="table-info">@item.Number</td>
+                                   @if (item.TeamId == 2)
+                                   {
+
+                                        switch (item.Name)
+                                        {
+                                             case "Marc-Andre":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/1">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Serginio":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/2">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Gerard":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/3">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Ronald":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/4">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Sergio":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/5">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Antoine":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/7">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Miralem":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/8">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Martin":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/9">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Lionel":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/10">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Ousmane":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/11">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             default:
+                                                  {
+                                                       <td>
+                                                            @item.Name
+                                                       </td>
+                                                       break;
+                                                  }
+                                        }
+                                   }
+                                   else
+                                   {
+                                        <td>@item.Name</td>
+                                   }
+                                   <td>@item.Surname</td>
+                                   <td>@item.Age(item.Born_Date)</td>
+                                   <td>@item.Position</td>
+                                   <td>@item.Height</td>
+                                   <td>@item.Weight</td>
+                              </tr>
+                              }
+                         </tbody>
+                    </table>
+               </div>
+               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+               <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+          </div>

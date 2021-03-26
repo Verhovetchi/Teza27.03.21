@@ -1,0 +1,69 @@
+﻿@model Final.Models.Player
+
+@{
+    ViewBag.Title = "EditPlayer";
+}
+
+<h2>Player: @Model.Surname</h2>
+
+@using (Html.BeginForm())
+{
+<fieldset>
+     @Html.HiddenFor(m => m.Id)
+     <p>
+          @Html.LabelFor(m => m.Name)
+          <br />
+          @Html.EditorFor(m => m.Name)
+     </p>
+
+     <p>
+          @Html.LabelFor(m => m.Surname)
+          <br />
+          @Html.EditorFor(m => m.Surname)
+     </p>
+
+     <p>
+          @Html.LabelFor(m => m.Born_Date)
+          <br />
+          @Html.EditorFor(m => m.Born_Date)
+     </p>
+
+
+     Position<br />
+     <select class="form-control" id="exampleFormControlSelect1" name="Position">
+          <option>Goalkeeper</option>
+          <option>Defender</option>
+          <option>Midfield</option>
+          <option>Forward</option>
+     </select>
+
+     <p>
+          @Html.LabelFor(m => m.Height)
+          <br />
+          @Html.EditorFor(m => m.Height)
+     </p>
+
+     <p>
+          @Html.LabelFor(m => m.Weight)
+          <br />
+          @Html.EditorFor(m => m.Weight)
+     </p>
+
+     <p>
+          @Html.LabelFor(m => m.Number)
+          <br />
+          @Html.EditorFor(m => m.Number)
+     </p>
+
+     <p>
+          Team<br/>
+          @Html.DropDownListFor(model => model.TeamId, ViewBag.Teams as SelectList)
+     </p>
+
+     <p>
+          <input type="submit" value="Save" />
+     </p>
+
+</fieldset>
+
+}

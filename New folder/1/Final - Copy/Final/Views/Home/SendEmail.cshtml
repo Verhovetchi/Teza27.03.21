@@ -1,0 +1,22 @@
+﻿@{ 
+     ViewBag.Title = "Feedback";
+}
+
+<form method="post" style="padding:50px;">
+     <div class="form-group">
+          <label for="from">From</label>
+          <input type="text" class="form-control" name="from" id="from">
+     </div>
+     <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" class="form-control" name="subject" id="subject">
+     </div>
+
+     <div class="form-group">
+          <label for="exampleFormControlTextarea1">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="body" rows="20"></textarea>
+     </div>
+
+     <div style="width:100%">
+     <button type="submit" class="btn btn-primary" style="width:15%; margin-left:42.5%;">Send Message</button></div>
+</form>

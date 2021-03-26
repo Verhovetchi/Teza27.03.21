@@ -1,0 +1,141 @@
+﻿body {
+     /*background-image: url(/Content/Images/Background.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;*/
+     background-image: radial-gradient(orange, black, red, blue);
+}
+
+#logo {
+     width: 40px;
+     height: 40px;
+}
+
+#nav{
+     width: 94%;
+     margin:0 auto;
+     border-radius:30px;
+     z-index:100;
+     margin-bottom:7px;
+     opacity:0.95;
+}
+
+#Content {
+     overflow: hidden;
+     width: 94%;
+     margin: 0 auto;
+     margin-bottom: 7px;
+     min-height: 800px;
+}
+
+#Article {
+     width: 59.5%;
+     min-height: 800px;
+     background-color: white;
+     border-radius: 30px;
+     opacity: 0.95;
+     float: left;
+     word-wrap: break-word;
+}
+
+#Clasament {
+     width: 40%;
+     min-height: 800px;
+     background-color: white;
+     border-radius: 30px;
+     opacity: 0.95;
+     float:right;    
+}
+
+#Santander {
+     height: 50px;
+}
+
+
+#Visca {
+     float: left;
+     width:50%;
+     margin-top: 15px;
+     margin-bottom: 7px;
+     font-size: 20px;
+     margin-top: 5px;
+}
+
+#Info{
+     float:right;
+     width:40%;
+}
+
+ul {
+     list-style-type: none;
+     margin-right: 10px;
+}
+
+#marca, #franceFootball, #mundoDeportivo{
+     float: right;
+     padding: 1px;
+     margin-right: 5px;
+}
+
+footer {     
+     width: 94%;
+     margin: 0 auto;
+     height: 40px;
+     background-color: white;
+     border-radius: 30px;
+     margin-bottom: 7px;
+}
+
+.edition{
+     height: 35px;
+}
+
+.pages{
+     padding-bottom:14px;
+}
+
+.table td, .table th{
+     text-align:center;
+     text-decoration:none;
+     border-radius:10px;
+     padding:3px;
+     vertical-align:inherit;
+}
+
+td.alig{
+     font-family:serif;
+     font-size:20px;
+     width:160px;
+     padding-left: 10px;
+     text-align:left;
+}
+
+a{
+     color: black;
+}
+
+a:hover {
+     text-decoration: none;
+     color:green;
+}
+
+a:active{
+     color:red;
+}
+
+td.table-info{
+     text-align:center;
+     width:1px;
+}
+
+.table {
+     width: 80%;
+     margin: 0px auto 5px auto;
+}
+
+td.table-info:hover{
+     color:red;
+}
+
+ul#pills-tab.nav.nav-pills.mb-3 {
+     padding: 0px 0px 0px 40%;
+}

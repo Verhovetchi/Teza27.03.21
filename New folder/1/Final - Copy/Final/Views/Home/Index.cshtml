@@ -1,0 +1,37 @@
+﻿@model Final.Models.IndexViewModel
+
+@{
+     ViewBag.Title = "Barcelona";
+}
+
+@foreach (var item in Model.News)
+{
+     <hr />
+          <div class="container">
+               <div class="row" >
+                    <div class="col-sm">
+                         <center style="margin-bottom:10px;">
+                              <img src="@item.PicturePath"  class="img-thumbnail" width="100%" alt="@Html.DisplayFor(modelItem => item.Title)" style="border-radius:30px;" />
+                         </center>
+                         <a href="~/Home/Article/@item.Id">
+                              @Html.Raw(item.Title)
+                         </a>
+                    </div>
+               </div>
+
+               <div class="row">
+                    <div class="col-sm">
+                         @Html.Raw(item.ShortDescription) <a href="~/Home/Article/@item.Id">Show more...</a>
+                    </div>
+               </div>
+               
+          </div>
+     <hr/>
+}
+
+<center class="pages">
+     <div class="btn-group">
+          @Html.PageLinks(Model.PageInfo, x => Url.Action("Index", new { page = x }))
+     </div>
+</center>
+<hr />

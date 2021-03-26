@@ -1,0 +1,59 @@
+﻿@model Final.Models.Player
+
+@{
+     ViewBag.Title = "CreatePlayer";
+}
+
+<h2>CreatePlayer</h2>
+
+@using (Html.BeginForm())
+{
+     <p>
+          Name<br />
+          @Html.EditorFor(model => model.Name)
+     </p>
+
+     <p>
+          Surname<br />
+          @Html.EditorFor(model => model.Surname)
+     </p>
+
+     <p>
+          Born Date<br />
+          @Html.EditorFor(model => model.Born_Date)
+     </p>
+
+     <p>
+          Position<br />
+          <select class="form-control" id="exampleFormControlSelect1" name="Position">
+               <option>Goalkeeper</option>
+               <option>Defender</option>
+               <option>Midfield</option>
+               <option>Forward</option>
+          </select>
+     </p>
+
+     <p>
+          Height<br />
+          @Html.EditorFor(model => model.Height)
+     </p>
+
+     <p>
+          Weight<br />
+          @Html.EditorFor(model => model.Weight)
+     </p>
+
+     <p>
+          Number<br />
+          @Html.EditorFor(model => model.Number)
+     </p>
+
+     <p>
+          Team<br />
+          @Html.DropDownListFor(model => model.TeamId, ViewBag.Teams as SelectList)
+     </p>
+
+     <p>
+          <input type="submit" value="Add" />
+     </p>
+}

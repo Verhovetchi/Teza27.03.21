@@ -1,0 +1,37 @@
+﻿@model Final.Models.Player
+
+@{
+    ViewBag.Title = "DeletePlayer";
+}
+
+<h2>Delete Player</h2>
+
+<dl>
+     <dt>Name</dt>
+     <dd>@Html.DisplayFor(model => model.Name)</dd>
+
+     <dt>Surname</dt>
+     <dd>@Html.DisplayFor(model => model.Surname)</dd>
+
+     <dt>Born Date</dt>
+     <dd>@Html.DisplayFor(model => model.Born_Date)</dd>
+
+     <dt>Position</dt>
+     <dd>@Html.DisplayFor(model => model.Position)</dd>
+
+     <dt>Height</dt>
+     <dd>@Html.DisplayFor(model => model.Height)</dd>
+
+     <dt>Weight</dt>
+     <dd>@Html.DisplayFor(model => model.Weight)</dd>
+
+     <dt>Number</dt>
+     <dd>@Html.DisplayFor(model => model.Number)</dd>
+
+
+</dl>
+
+@using (Html.BeginForm())
+{
+     <input type="submit" value="Delete" />
+}

@@ -1,0 +1,391 @@
+﻿@using Final.Models;
+@using System.Data.Entity;
+@using System.Web;
+
+@{
+     SoccerContext db = new SoccerContext();
+
+     var teams = db.Teams.OrderByDescending(p=>p.Points);
+
+     db.Players.Include(p => p.Team);
+     db.Players.ToList();
+     
+     int i = 1;
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+     <title>
+          @ViewBag.Title
+     </title>
+     <link href="~/Content/Style.css" rel="stylesheet" type="text/css">
+     <link rel="icon" href="~/Content/icon/barcaIcon.ico">
+     
+     <style>
+          body {
+               font-family: Arial, Helvetica, sans-serif;
+          }
+
+          /* Full-width input fields */
+          input[type=text], input[type=password] {
+               width: 100%;
+               padding: 12px 20px;
+               margin: 8px 0;
+               display: inline-block;
+               border: 1px solid #ccc;
+               box-sizing: border-box;
+          }
+
+          /* Set a style for all buttons */
+          button {
+               background-color: #4CAF50;
+               color: white;
+               padding: 14px 20px;
+               margin: 8px 0;
+               border: none;
+               cursor: pointer;
+               width: 100%;
+          }
+
+               button:hover {
+                    opacity: 0.8;
+               }
+
+          /* Extra styles for the cancel button */
+          .cancelbtn {
+               width: auto;
+               padding: 10px 18px;
+               background-color: #f44336;
+          }
+
+          /* Center the image and position the close button */
+          .imgcontainer {
+               text-align: center;
+               margin: 24px 0 12px 0;
+               position: relative;
+          }
+
+          img.avatar {
+               width: 40%;
+               border-radius: 50%;
+          }
+
+          .container {
+               padding: 16px;
+          }
+
+          span.psw {
+               float: right;
+               padding-top: 16px;
+          }
+
+          /* The Modal (background) */
+          .modal {
+               display: none; /* Hidden by default */
+               position: fixed; /* Stay in place */
+               z-index: 1; /* Sit on top */
+               left: 0;
+               top: 0;
+               width: 100%; /* Full width */
+               height: 100%; /* Full height */
+               overflow: auto; /* Enable scroll if needed */
+               background-color: rgb(0,0,0); /* Fallback color */
+               background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+               padding-top: 60px;
+          }
+
+          /* Modal Content/Box */
+          .modal-content {
+               background-color: #fefefe;
+               margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+               border: 1px solid #888;
+               width: 60%; /* Could be more or less, depending on screen size */
+          }
+
+          /* The Close Button (x) */
+          .close {
+               position: absolute;
+               right: 25px;
+               top: 0;
+               color: #000;
+               font-size: 35px;
+               font-weight: bold;
+          }
+
+               .close:hover,
+               .close:focus {
+                    color: red;
+                    cursor: pointer;
+               }
+
+          /* Add Zoom Animation */
+          .animate {
+               -webkit-animation: animatezoom 0.6s;
+               animation: animatezoom 0.6s
+          }
+
+          -webkit-keyframes animatezoom {
+               from
+
+          {
+               -webkit-transform: scale(0)
+          }
+
+          to {
+               -webkit-transform: scale(1)
+          }
+
+          }
+
+          keyframes animatezoom {
+               from
+
+          {
+               transform: scale(0)
+          }
+
+          to {
+               transform: scale(1)
+          }
+
+          }
+
+          /* Change styles for span and cancel button on extra small screens */
+          media screen and (max-width: 300px) {
+               span .psw
+
+          {
+               display: block;
+               float: none;
+          }
+
+          .cancelbtn {
+               width: 100%;
+          }
+          }
+     </style>
+</head>
+
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-tod" id="nav">
+          <a class="navbar-brand" href="/Home/Index">
+               <img src="~/Content/Images/Logo.png" alt="Mes que un club!" id="logo" />
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                         <a class="nav-link" href="/Home/Index"><span>Home</span><span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown" style="opacity:1;">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Seasons
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">La Liga</a>
+                              <a class="dropdown-item" href="#">Championes League</a>
+                              <a class="dropdown-item" href="#">Copa Joan Gamper</a>
+                              <a class="dropdown-item" href="#">Supercopa</a>
+                              <a class="dropdown-item" href="#">International Champions Cup</a>
+                              <a class="dropdown-item" href="#">Catalunia Supercup</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Friendly Matches</a>
+                         </div>
+                    </li>
+
+                    <li class="nav-item active">
+                         <a class="nav-link" href="#">Start Squad<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                         <a class="nav-link" href="#">LIVE<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown" style="opacity:1;">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Club
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Main coach</a>
+                              <a class="dropdown-item" href="#">About club</a>
+                              <a class="dropdown-item" href="#">Club president</a>
+                              <a class="dropdown-item" href="#">Palmares</a>
+                              <a class="dropdown-item" href="#">All coaches</a>
+                              <a class="dropdown-item" href="#">Emblem</a>
+                              <a class="dropdown-item" href="#">About fans</a>
+                         </div>
+                    </li>
+
+                    <li class="nav-item dropdown" style="opacity:1;">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Legends
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="~/Legends/Iniesta">Andres Iniesta</a>
+                              <a class="dropdown-item" href="~/Legends/Valdes">Victor Valdes</a>
+                              <a class="dropdown-item" href="~/Legends/Maradona">Diego Maradona</a>
+                              <a class="dropdown-item" href="~/Legends/Puyol">Carles Puyol</a>
+                              <a class="dropdown-item" href="~/Legends/Messi">Lionel Messi</a>
+                              <a class="dropdown-item" href="~/Legends/Pele">Pele</a>
+                              <a class="dropdown-item" href="~/Legends/Xavi">Xavi Hernandes</a>
+                              <a class="dropdown-item" href="~/Legends/Mascherano">Xavier Mascherano</a>
+                         </div>
+                    </li>
+
+                    <li class="nav-item active">
+                         <a class="nav-link" href="#">Camp Nou<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown" style="opacity:1;">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Site
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="~/Home/SendEmail">Feedback</a>
+                              <a class="dropdown-item" href="~/Home/Privacy">Personal Information</a>
+                              <a class="dropdown-item" href="~/Home/About">About</a>
+                         </div>
+                    </li>
+
+               </ul>
+
+               <a href="~/Account/Login"><button id="btnLogin" class="btn btn-outline-success my-2 my-sm-0" onclick="countRabbits()" style="width:auto;">Login</button></a>
+
+                    
+
+
+
+               @*<div id="id01" class="modal">
+
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                         <div class="imgcontainer">
+                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                              <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" class="avatar">
+                         </div>
+
+                         <div class="container">
+                              <label for="uname"><b>Username</b></label>
+                              <input type="text" placeholder="Enter Username" name="uname" required>
+
+                              <label for="psw"><b>Password</b></label>
+                              <input type="password" placeholder="Enter Password" name="psw" required>
+
+                              <button type="submit">Login</button>
+                              <label>
+                                   <input type="checkbox" checked="checked" name="remember"> Remember me
+                              </label>
+                         </div>
+
+                         <div class="container" style="background-color:#f1f1f1">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                              <span class="psw">Forgot <a href="#">password?</a></span>
+                         </div>
+                    </form>
+               </div>
+
+               <script>
+                    // Get the modal
+                    var modal = document.getElementById('id01');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                         if (event.target == modal) {
+                              modal.style.display = "none";
+                         }
+                    }
+               </script>*@
+          </div>
+     </nav>
+
+     @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
+
+
+     <div id="Content">
+          <div id="Article">
+               @RenderBody()
+          </div>
+          <div id="Clasament">
+               <h2>
+                    <center>
+                         <img src="~/Content/Images/LaLiga.png" alt="La Liga Santander" title="La Liga Santander" id="Santander" />
+                         Clasament
+                    </center>
+               </h2>
+
+               @Html.Partial("Clasament", teams.Include(t=>t.Image).ToList())
+
+               <div>
+
+
+
+               </div>
+          </div>
+     </div>
+
+
+
+
+
+
+
+     <footer>
+          <div id="Visca">
+               <marquee direction="right">
+
+                    <span style="color:blue">
+                         &copy; @DateTime.Now.Year
+                    </span>
+
+                    <span style="color:red">
+                         Visca el Barça
+                    </span>
+
+                    <span style="color:blue">
+                         . Visca Catalunya!
+                    </span>
+
+               </marquee>
+          </div>
+
+          <div id="Info">
+               <ul>
+                    <li id="marca">
+                         <a href="https://www.marca.com/futbol/barcelona.html" target="_blank" title="Marca">
+                              <img src="~/Content/Images/Marca.png" class="edition">
+                         </a>
+                    </li>
+                    <li id="franceFootball">
+                         <a href="https://www.francefootball.fr/" target="_blank" title="France Football">
+                              <img src="~/Content/Images/FranceFootball.png" class="edition">
+                         </a>
+                    </li>
+
+                    <li id="mundoDeportivo">
+                         <a href="https://inosmi.ru/mundodeportivo_com/" target="_blank" title="Mundo Deportivo">
+                              <img src="~/Content/Images/Mundo Deportivo.jpg" class="edition">
+                         </a>
+                    </li>
+               </ul>
+          </div>
+     </footer>
+
+     @Scripts.Render("~/bundles/jquery")
+     @Scripts.Render("~/bundles/bootstrap")
+     @RenderSection("scripts", required: false)
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
